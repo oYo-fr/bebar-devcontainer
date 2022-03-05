@@ -1,0 +1,12 @@
+helpers:
+  - ./helpers/*.js
+partials:
+  - ./partials/*.hbs
+data:
+  -
+    name: greetings
+    file: ./data/greetings.json
+templates:
+  -
+    file: ./templates/greetings.hbs
+    output: ./outputs/result.txt
