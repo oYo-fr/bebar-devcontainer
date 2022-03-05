@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+      "**/node_modules/**": true,
+      "package-*": true,
+      "**/.devcontainer/**": true,
+      "**/.vscode/**": true,
+      "**/git/**": true
+  },
+  "files.associations": {
+    "*.bebar": "yaml"
+  },
+  "npm.enableRunFromFolder": true,
+  "npm.exclude": ["/home/git/**"],
+  "workbench.colorTheme": "Tomorrow Night Blue",
+  "npm.scriptExplorerExclude": [
+    "test"
+  ]
+}

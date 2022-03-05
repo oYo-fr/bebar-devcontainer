@@ -1,0 +1,6 @@
+{
+    "name": "bebar",
+    "scripts": {
+        "go": "bebar -f ./do.bebar -w ."
+    }
+}

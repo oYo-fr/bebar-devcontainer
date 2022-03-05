@@ -1,0 +1,140 @@
+{
+	"Bebar templates declaration": {
+		"scope": "yaml",
+		"prefix": "bebar-templates",
+		"body": [
+			"templates:",
+			"\t-",
+			"\t\tfile: $1",
+			"\t\toutput: $2",
+			"$0"
+		],
+		"description": "A template description in a bebar file"
+	},
+	"Bebar template declaration": {
+		"scope": "yaml",
+		"prefix": "bebar-template",
+		"body": [
+			"-",
+			"\tfile: $1",
+			"\toutput: $2",
+			"$0"
+		],
+		"description": "A template description in a bebar file"
+	},
+	"Bebar template prettifier": {
+		"scope": "yaml",
+		"prefix": "bebar-template-pretty",
+		"body": [
+			"prettify:",
+			"\tparser: ${1|flow,babel,babel-flow,babel-ts,typescript,espree,meriyah,css,less,scss,json,json5,json-stringify,graphql,markdown,mdx,vue,yaml,glimmer,html,angular,lwc|}",
+			"$0"
+		],
+		"description": "A template description in a bebar file"
+	},
+	"Bebar data declaration": {
+		"scope": "yaml",
+		"prefix": "bebar-data",
+		"body": [
+			"data:",
+			"\t-",
+			"\t\tname: $1",
+			"\t\tfile: $2",
+			"$0"
+		],
+		"description": "A data description in a bebar file"
+	},
+	"Bebar helpers declaration": {
+		"scope": "yaml",
+		"prefix": "bebar-helpers",
+		"body": [
+			"helpers:",
+			"\t- ${1:./helpers/**/*.js}",
+			"$0"
+		],
+		"description": "A helpers description in a bebar file"
+	},
+	"Bebar partials declaration": {
+		"scope": "yaml",
+		"prefix": "bebar-partials",
+		"body": [
+			"partials:",
+			"\t- ${1:./partials/**/*.hbs}",
+			"$0"
+		],
+		"description": "A partials description in a bebar file"
+	},
+	"Bebar nexts declaration": {
+		"scope": "yaml",
+		"prefix": "bebar-nexts",
+		"body": [
+			"next:",
+			"\t- ${1:next.hbs}",
+			"$0"
+		],
+		"description": "The next bebar file(s) to load"
+	},
+	"Handlebar if helper":{
+			"prefix": "hif",
+			"body": [
+					"{{#if ${1:cond}}}",
+					"${0}",
+					"{{/if}}"
+			],
+			"description": "If block helper"
+	},
+	"Handlebar if else helper":{
+			"prefix": "hifelse",
+			"body": [
+					"{{#if ${1:cond}}}",
+					"${0}",
+					"{{else}}",
+					"${0}",
+					"{{/if}}"
+			],
+			"description": "if else block helper"
+	},
+	"Handlebar unless helper":{
+			"prefix": "hunless",
+			"body": [
+					"{{#unless ${1:cond}}}",
+					"${0}",
+					"{{/unless}}"
+			],
+			"description": "unless block helper"
+	},
+	"Handlebar each helper":{
+			"prefix": "heach",
+			"body": [
+					"{{#each ${1:list}}}",
+					"${0}",
+					"{{/each}}"
+			],
+			"description": "each block helper"
+	},
+	"Handlebar each else helper":{
+			"prefix": "heachelse",
+			"body": [
+					"{{#each ${1:list}}}",
+					"${0}",
+					"{{else}}",
+					"$0",
+					"{{/each}}"
+			],
+			"description": "each else block helper"
+	},
+	"Handlebar with helper":{
+			"prefix": "hwith",
+			"body": [
+					"{{#with ${property}}}",
+					"${0}",
+					"{{/with}}"
+			],
+			"description": "each block helper"
+	},
+	"Handlebar partials ":{
+			"prefix": "hpar",
+			"body": "{{> partial_name}}}",
+			"description": "partials in hbs"
+	}
+}

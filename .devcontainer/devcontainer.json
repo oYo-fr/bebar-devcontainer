@@ -1,0 +1,8 @@
+{
+	"name": "Bebar dev env",
+	"image": "yoannd/bebar:latest",
+	"extensions" : ["oyo-fr.bebar-vscode"],
+	"workspaceFolder": "/home",
+	"mounts": ["source=${localWorkspaceFolder},target=/home,type=bind,consistency=cached"],
+	"postCreateCommand": "npm update -g bebar"
+}
